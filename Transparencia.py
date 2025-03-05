@@ -1,6 +1,6 @@
 """
 ================================================================================
-Script para Remover Fundo Branco de uma Imagem e Torná-lo Transparente
+Script para Remover Fundo Branco de uma Imagem e Torná-lo Transparente. Busquei tornar o processo mais eficiente do que as plataformas online gratuitas.
 
 Descrição:
     Este script processa uma imagem e remove todos os pixels brancos, tornando-os transparentes.
