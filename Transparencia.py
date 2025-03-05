@@ -55,9 +55,9 @@ def remove_white_background(input_path):
     img_transparent = Image.fromarray(img_array)
     
     # Criar o nome do arquivo de saída automaticamente
-    file_dir, file_name = os.path.split(input_path)  # Separa caminho e nome do arquivo
-    name, ext = os.path.splitext(file_name)  # Separa nome e extensão
-    output_path = os.path.join(file_dir, f"{name}_transparencia.png")  # Novo nome
+    diretorio, nome_arquivo = os.path.split(input_path)  # Separa caminho e nome do arquivo
+    nome, ext = os.path.splitext(nome_arquivo)  # Separa nome e extensão
+    output_path = os.path.join(diretorio, f"{nome}_transparencia.png")  # Novo nome
 
     # Salvar a imagem processada
     img_transparent.save(output_path, format="PNG")
